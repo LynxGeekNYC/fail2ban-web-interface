@@ -1,7 +1,5 @@
 <?php
-# Fail2Ban Webinterface (f2bwi)
-# Monitoring fail2ban and manually ban / release IP's
-# (c) 2017 CC-BY-SA 3.0 Steffen Ille <steffen@php-works.net>
+
 
 require_once('engine.inc.php');
 
