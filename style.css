@@ -1,0 +1,44 @@
+/* Stylesheet for Fail2Ban Webinterface */
+
+* {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+h1 { font-size: 20px; }
+h2 { font-size: 16px; }
+
+table {
+	background-color: #eee;
+	white-space: nowrap;
+	border: 1px solid #aaa;
+}
+
+table.hl {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+table.hl > tr { background-color: transparent; }
+
+td.bold {
+	font-weight: bold;
+	background-color: #aca;  }
+
+tr:hover {
+	background-color: #cac;
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+
+.msg_ok { color: #080; }
+.msg_er { color: #800; }
+.msg_gr { color: #666; font-style: italic; font-weight: normal; }
+
+button > img
+{ border: 0;
+  vertical-align: bottom;
+}

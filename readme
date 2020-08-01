@@ -1,0 +1,16 @@
+Fail2Ban Webinterface (f2bwi)
+Monitoring fail2ban and manually ban / release IP's
+(c) 2017 CC-BY-SA 3.0 Steffen Ille <steffen@php-works.net>
+Web: https://sourceforge.net/projects/f2bwi/
+
+- get your fail2ban and jails running, if not already done
+- unpack archive and put contents to your webspace
+- protect this script, use at least .htaccess auth or ip allow/deny rules
+- allow use of "exec()" php function for this script if restricted
+- edit config.inc.php to your needs
+- run this script to check if socket access is ok
+- maybe you need to change the file /etc/init.d/fail2ban to this:
+  at the end of "function do_start()" before the line "return 0" put
+  "chmod 766 $SOCKFILE" to make the socket r/w for webserver user
+  and then restart fail2ban
+- run the script with your browser
