@@ -13,7 +13,7 @@ Monitoring fail2ban and manually ban / release IP's
   and then restart fail2ban
 - run the script with your browser
 
-update 20/12/2023 - by cleiton meurer
+update 30/12/2023 - by cleiton meurer
 
 -changed to use sudo - edit /etc/sudoers "www-data ALL=NOPASSWD:/usr/bin/fail2ban-client"
 -add language support pt br
