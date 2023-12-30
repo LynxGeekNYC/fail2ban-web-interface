@@ -38,7 +38,7 @@ foreach($jails as $j=>$i){ $banned=list_banned($j); $jails[$j]=$banned; }
 
 
 <?php
-$erg2=@exec('sudo fail2ban-client status');
+$erg2=@exec('sudo /usr/bin/fail2ban-client status');
  if($erg2==''){ echo '<h1><p class="msg_er">'.$serviceerror.'</p> </h1>'; exit; }
  ?> 
  

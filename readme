@@ -15,3 +15,8 @@ Monitoring fail2ban and manually ban / release IP's
 
 update 20/12/2023 - by cleiton meurer
 
+-changed to use sudo - edit /etc/sudoers "www-data ALL=NOPASSWD:/usr/bin/fail2ban-client"
+-add language support pt br
+-changed script to support ipv6
+-removed $SOCKFILE check replaced with a sudo check
+-changed error return locations to top of page
